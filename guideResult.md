@@ -131,13 +131,6 @@ Performance testing is an iterative process. Continuous monitoring, analysis, an
 - Automate performance validation
 - Develop comprehensive monitoring
 
-### Test Result - Screenshots
-1. 
-- ![First Screenshot - (Click)](assets/k6-1.png)
-- ![Second Screenshot - (Click)](assets/k6-2.png)
-- ![Third Screenshot - (Click)](assets/k6-3.png)
-- ![Fourth Screenshot - (Click)](assets/k6-4.png)
-
 ## 🔗 Resources
 - [Grafana K6 Documentation](https://k6.io/docs/)
 - [Performance Testing Guide](https://grafana.com/docs/k6/latest/testing-guides/)
