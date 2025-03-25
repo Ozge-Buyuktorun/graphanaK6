@@ -5,8 +5,10 @@
 This project provides comprehensive API performance and functional testing for the Reqres.in REST API using Grafana K6 and JavaScript. The test suite is designed to validate various API endpoints with detailed checks and performance monitoring.
 
 ## Test Scenarios
-
-The project covers four main test scenarios:
+The project covers four main test scenarios: Please look first this main test file --> 
+```bash
+k6 run firstTest.js
+```
 
 ### 1. User List Retrieval (/api/users)
 - Validate API response status
@@ -60,8 +62,7 @@ Key performance testing features:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/reqres-api-tests.git
-cd reqres-api-tests
+git clone https://github.com/your-username/graphanaK6.git
 
 # Install dependencies
 npm install
@@ -74,10 +75,10 @@ npm install
 
 ```bash
 # Run all tests
-k6 run tests/*.js
+k6 run test_file_name/*.js
 
 # Run specific test
-k6 run tests/reqres-api-tests.js
+k6 run firstTest.js
 ```
 
 ## Custom Metrics
@@ -101,7 +102,6 @@ The test script includes custom metrics for:
 - User and resource information validation
 
 ### Test Result - Screenshots
-1. 
 - ![First Screenshot - (Click)](assets/k6-1.png)
 - ![Second Screenshot - (Click)](assets/k6-2.png)
 - ![Third Screenshot - (Click)](assets/k6-3.png)

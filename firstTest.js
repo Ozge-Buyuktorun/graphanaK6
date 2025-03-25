@@ -23,7 +23,7 @@ export const options = {
 
 // Main scenario function - executed for each virtual user
 export default function () {
-  /**
+
   group('List Users', function () {
     let page = 2;
     // Send GET request and store the response
@@ -101,7 +101,7 @@ export default function () {
     errorRate.add(response.status !== 200);
     // Pause between requests to simulate real user behavior
     sleep(1);
-  }); 
+  });
 
   group('Single User', function () {
     const response = http.get(`${baseURL}/api/users/2`);
@@ -133,7 +133,7 @@ export default function () {
     sleep(1);
   });
 
-  group('Single User is Not Found', function(){
+  group('Single User is Not Found', function () {
     const response = http.get(`${baseURL}/api/users/23`);
     const responseBody = response.body ? JSON.parse(response.body) : {};
 
@@ -144,12 +144,12 @@ export default function () {
       'Response time < 200ms': (r) => r.timings.duration < 200,
     });
 
-    check(responseBody,{
+    check(responseBody, {
       'Empty Object Value Control': (data) => data === '{}',
       'Empty Object Value Control': (data) => Object.keys(data).length === 0,
     });
   });
-  */
+
 
   group('Unknown Request', function () {
     const response = http.get(`${baseURL}/api/unknown`);
